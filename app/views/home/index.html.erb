@@ -1,0 +1,9 @@
+<h1>Buscador de Chuck Norris por Categoria o  Query</h1>
+<p>Categoria Validas explicit,dev,movie,food,celebrity,science,sport,political,religion,animal,music,travel,carrer,money and fashion</p>
+<%= form_tag home_todo_path, :method => 'get' do %>
+ <%= text_field(params[:search] ,"key1", class: 'form-control', style:"border:1px solid orange", placeholder: "explicit,dev,movie,food,celebrity,science,sport,political,religion,animal,music,travel,carrer,money and fashion")%>
+<% end %>
+<p>Por cualquier palabra</p>
+<%= form_tag home_todo_path, :method => 'get' do %>
+ <%= text_field(params[:search] ,"key2", class: 'form-control', style:"border:1px solid orange", placeholder: " ")%>
+<% end %>
